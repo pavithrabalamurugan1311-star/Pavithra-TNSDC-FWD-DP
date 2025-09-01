@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page with Table and Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    form {
+      width: 50%;
+      background: #f9f9f9;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 12px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+    button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+
+  <h2>Student Details (Table)</h2>
+  <table>
+    <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Course</th>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>Pavithra</td>
+      <td>Computer Science</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>Arjun</td>
+      <td>Mathematics</td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Kavya</td>
+      <td>Biology</td>
+    </tr>
+  </table>
+
+
+  <h2>Registration Form</h2>
+  <form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+
+    <label for="roll">Roll No:</label>
+    <input type="number" id="roll" name="roll" required>
+
+
+    <label for="course">Course:</label>
+    <select id="course" name="course">
+      <option value="cs">Computer Science</option>
+      <option value="math">Mathematics</option>
+      <option value="bio">Biology</option>
+    </select>
+
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3"></textarea>
+
+
+    <button type="submit">Submit</button>
+  </form>
+
+
+</body>
+</html>
